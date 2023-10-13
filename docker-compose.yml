@@ -70,4 +70,5 @@ services:
 
 networks:
     skyros_net:
+        external: true
         driver: bridge
