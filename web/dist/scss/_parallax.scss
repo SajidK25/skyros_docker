@@ -1,0 +1,95 @@
+
+// PARALLAX
+
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/banner4.jpg");
+  /* Set a specific height */
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 1199px) {
+    /* Create the parallax scrolling effect */
+    height: 300px;
+    background-attachment: fixed;
+  }
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../img/banner5.jpg");
+  /* Set a specific height */
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 1199px) {
+    /* Create the parallax scrolling effect */
+    height: 300px;
+    background-attachment: fixed;
+  }
+
+  a {
+    background-color: $smoke;
+    border-radius: 50%;
+    padding: 20px;
+  }
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("../img/banner6.jpg");
+  /* Set a specific height */
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 1199px) {
+    /* Create the parallax scrolling effect */
+    height: 300px;
+    background-attachment: fixed;
+  }
+}
+
+.parallax4 {
+  /* The image used */
+  background-image: url("../img/banner7.jpg");
+  /* Set a specific height */
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 1199px) {
+    /* Create the parallax scrolling effect */
+    height: 300px;
+    background-attachment: fixed;
+  }
+}
+
+.parallax5 {
+  /* The image used */
+  background-image: url("../img/banner8.jpg");
+  /* Set a specific height */
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 1199px) {
+    /* Create the parallax scrolling effect */
+    height: 300px;
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .parallax2 h2 {
+    padding-top: 14rem !important;
+  }
+}

@@ -1,0 +1,207 @@
+
+
+.rlist{
+    .sticky_column{
+    > *{
+        margin-bottom: 5px;
+    }
+    }
+    .faq-body{
+        overflow: hidden;
+        position: relative;
+    font-family: $headings-font-family;
+    padding: 20px;
+background-color: rgba(0,0,0,0.5);
+color: #fff;
+border-radius: 10px;
+}
+    .btn{
+        display: block;
+        border-radius: 10px;
+    }
+    .num {
+
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 7px;
+
+}
+    .title {
+   position: absolute;
+top: 0;
+left: 0;
+right: 0;
+text-align: center;
+padding: 10px 0;
+background-color: $blue;
+}
+    .textof{
+        margin-top: 35px;
+        text-align: center;
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+}
+
+.artin{
+    .listarticle {
+        .main-title{
+            text-align: left;
+        }
+    display: flex;
+  
+    align-items: center;
+        padding: 40px 0;
+
+}
+    h3{
+        text-align: center;
+        padding: 25px 0;
+         padding-bottom: 10px;
+    }
+    .btn.btn-link{
+        padding: 0;
+        width: 100%;
+        text-align: left;
+    }
+    .bb{
+        img{
+            height: 24px;margin-right: 8px;display: inline;
+        }
+        &:before{
+            
+   content: "▼";
+display: inline;
+float: right;
+   
+
+        }
+        
+    }
+    div[aria-expanded="true"]{
+        .bb{
+        &:before{
+            
+   content: "▲";
+
+   
+
+        }
+        
+    }
+        
+    }
+}
+
+.card-header{
+    background-color: $blue;
+    color:#fff;
+    .btn.btn-link{
+        color: #fff;
+        &:hover{
+            color: darken(#fff,10);
+            text-decoration: none;
+        }
+    }
+}
+
+.parentcard {
+    display: flex;
+    margin: 25px 0;
+
+}
+.pdficon {
+    height: 100px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imgcon{
+    $margin:20px;
+    $width:60%;
+     $width2:100 - $width;
+    display: flex;
+flex-wrap: wrap;
+    justify-content: space-between;
+    img{
+        height: 150px;
+        width: 100%;
+        width: calc( #{$width} - #{$margin/2} );
+        margin-bottom: $margin;
+    object-fit: cover;
+         &:nth-last-of-type(3){
+            width: 100%;
+        }
+        &:nth-last-of-type(2){
+            width: calc( #{$width2} - #{$margin/2} );
+        }
+    }
+}
+
+
+
+    table{
+        width: 100%;
+        &.bigtable{
+            font-size: 0.8rem;
+
+             td {
+                padding: 5px;
+
+            }
+        }
+        .tdhead{
+            color: #fff;
+            background-color: $blue;
+
+        }
+
+
+      thead {
+          tr {
+              &:first-of-type {
+                  color: #fff;
+                  background-color: $blue;
+              }
+          }
+      }
+        td {
+
+            padding: 12px;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
