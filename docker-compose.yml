@@ -17,7 +17,6 @@ services:
         restart: always
         depends_on:
             - php
-            - mysqldb
         networks:
             - skyros_net
             - default
