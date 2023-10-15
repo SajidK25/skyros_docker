@@ -12,7 +12,7 @@ services:
         depends_on:
             - mysqldb
         networks:
-            - default
+            - mysqldb_net
     mysqldb:
         image: mysql:${MYSQL_VERSION}
         container_name: ${MYSQL_HOST}
@@ -29,10 +29,11 @@ services:
         volumes:
             - "./data/db/mysql:/var/lib/mysql"
         networks:
-            - default
+            - mysqldb_net
             - skyros_net
 
 networks:
     skyros_net:
         external: true
         driver: bridge
+    mysqldb_net:
