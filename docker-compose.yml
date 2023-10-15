@@ -34,7 +34,7 @@ services:
             - "./web/libs/composer/:/app"
         command: composer install
         networks:
-            - default
+            - skyros_net
 
     myadmin:
         image: phpmyadmin/phpmyadmin
