@@ -1,0 +1,450 @@
+.calculator {
+    .form-sections img {
+        max-width: 255px;
+    }
+
+    h1{
+        font-size:27px;
+    }
+    .calculatorin {
+        a {
+            color: lighten($blue, 40);
+        }
+    }
+    &:after{
+
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top:0;
+        right: 0;
+        background-color: #fff;
+          background-image: url(/dist/images/pexels-photo-349600.jpg);
+         background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+
+    }
+       &:before{
+        $back:linear-gradient(top, #fff 25%, rgba(0, 0, 0, 0) 50%);
+    content: "";
+    display: block;
+           background: rgba(0, 0, 0, 0.5);
+    width: 100px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom:0;
+    width: 100%;
+    opacity: 0.5;
+        }
+
+
+
+
+    position: relative;
+    padding: 150px 0;
+    margin-top: 50px;
+    @media screen and (max-width: $nav-tab-max){
+        padding: 40px 0;
+
+    }
+    .row{
+
+        justify-content: center;
+
+    }
+}
+.form_element.flxx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form.calculatorin {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+     width: calc(33% - 40px);
+    @media screen and (max-width: $nav-tab-min) {
+    width: calc(100% - 40px);
+}
+
+    background: rgba(0,0,0,0.5);
+
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+
+        .ppp{
+            display: flex;
+            flex-direction: column;
+            height: 94px;
+            justify-content: center;
+            align-items: center;
+    }
+    ul{
+        list-style: none;
+    display: table;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 0px;
+    margin-bottom: 17px;
+    padding: 0;
+         &.tetra{
+             li{
+                 opacity: 0;
+                   background-image: url(../../images/home.svg);
+                 &:first-of-type{
+                        background-size: 70%;
+                    opacity: 1;
+                      &.active{
+                     opacity: 1;
+                 }
+
+                 }
+
+
+
+
+                   &:last-of-type{
+                        opacity: 1;
+                        &.active{
+                     opacity: 1;
+                 }
+
+
+
+
+
+                 }
+                 &.active{
+                     opacity: 0;
+                 }
+             }
+        }
+        li{    width: 26px;
+    height: 26px;
+    background-size: 26px;
+    background-image: url(../../images/man-user.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+            opacity: 0.5;
+
+            &.active{
+                 opacity: 1;
+
+            }
+
+
+
+                span{
+                display: none;
+            }}
+    }
+    .sliderdiv{
+        height: 6px;
+    cursor: pointer;
+    margin: 10px 0;
+    background: red;
+    position: relative;
+    }
+    .red {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+}
+    .base {
+    width: 26px;
+    height: 26px;
+    background-color: red;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-radius: 50%;
+        z-index: 1;
+}
+}
+.t1 li {
+    cursor: pointer;
+}
+
+
+#main_choices,
+#revma_choices,
+#aerio_choices,
+#epaggelmatiko_revma_choices,#oikiako_revma_choices,.anim,.form__actions .btn{
+
+    opacity: 1;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: example;
+    animation-name: example;
+
+
+}
+
+div.calculatorin {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(33% - 40px);
+
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    max-width: 600px;
+}
+
+.bbutton .btn.btn-primary{
+    font-weight: bold;
+    text-shadow: 2px 4px 2px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.35);
+
+
+
+}
+
+
+.backblack{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    label.form_label {
+        font-size: 1.3rem;
+    }
+    input[type="radio"]{
+        width: 40px;
+        height: 24px;
+    }
+
+
+
+
+}
+.imgbtn{
+    cursor:pointer;
+    transition: all 0.3s;
+    padding-bottom: 20px;
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+
+.brc{
+    > * {
+        cursor:pointer;
+        text-shadow:2px 2px 2px rgba(0,0,0,0.5);
+        margin-bottom: 20px;
+        margin-right:20px;
+
+        &:before {
+            content: "◄";
+            display: inline;
+
+        }
+    }
+    display: flex;
+    justify-content: center;
+
+    h2,h3,h4,h5,p,*{
+        font-size: 17px;
+        transition: all 0.3s;
+        &:hover{
+          color:lighten(#186adf,20);
+
+        }
+    }
+}
+.form__actions {
+
+        display: block;
+    }
+.boxtype1, {
+    display: none ;
+    &.show{
+        display: block;
+    }
+}
+
+select.type1 {
+    margin: 20px 0;
+}
+#fasi,#type,.flxx{
+    input[type=radio] {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+        display: none;
+    }
+    input[type="radio"]:checked+label { font-weight: bold; background:$blue; box-shadow: 0px 0px;    top: 3px; }
+    label{
+        display: inline-block;
+        border-radius: 0px;
+        padding: 12px 20px;
+        vertical-align: middle;
+        color: #fff;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        background: linear-gradient(to bottom, #3262a7 0%, #012150 100%);
+        font-size: 17px;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 3px #01132e;
+        border-right: 1px solid rgba(0,0,0,0.4);
+        flex: 1;
+
+        &::selection { background: transparent; }
+        &::-moz-selection { background: transparent; }
+
+
+        &:hover{
+            box-shadow: 0px 0px #01132e;
+            top: 3px;
+        }
+
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #fff 0%, #000 100%);
+            z-index: -1;
+            opacity: 1;
+        }
+
+        $radious:10px;
+        &:first-of-type{
+            border-bottom-left-radius:$radious;
+            border-top-left-radius: $radious;
+
+        }
+        &:last-of-type{
+            border-bottom-right-radius:$radious;
+            border-top-right-radius: $radious;
+            border-right: 0px solid rgba(0,0,0,0.0);
+
+        }
+        &:not(label:first-of-type){
+            &:not(label:last-of-type){
+                border: 2px solid black;
+
+
+            }
+
+
+
+        }
+
+
+
+    }
+}
+
+.flxx{
+    .flex2{
+        input[type=radio]:checked + label {
+            font-weight: bold;
+            background: none;
+            text-shadow: 1px 1px 2px #000;}
+       $left:20px;
+        $bb:calc(100% - 40px);
+        position: relative;
+        margin-bottom: 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: $left;
+            width: calc(100% - 40px);
+            height:  14px;
+            display: block;
+            background: #9A9999;
+            border-radius: 8px;
+
+
+        }
+        label{flex: inherit;
+            position: unset;
+            background: none;
+            box-shadow: none;
+            padding: 5px 20px;
+            border-right:none;
+
+            font-weight: normal;
+            &::before {
+                display: none;
+
+            }
+        }
+        .swich {
+            width: 20px;
+            height: 20px;
+            background: lighten($blue,10);
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px #000;
+            transition: left .3s;
+        }
+
+        input.a1[type=radio]:checked + label {
+            .swich { left: $left;
+                z-index: 0;
+            }
+        }
+        input.a1[type=radio] + label {
+            .swich { left: $bb;
+
+                z-index: 1;
+            }
+        }
+
+        input.a2[type=radio]:checked + label {
+            .swich { left: $bb;
+                z-index: 0;
+            }
+        }
+        input.a2[type=radio] + label {
+            .swich { left: $left;
+
+                z-index: 1;
+            }
+        }
+
+    }
+
+}
+
+
+

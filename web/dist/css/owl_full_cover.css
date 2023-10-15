@@ -1,0 +1,123 @@
+:root {
+    --main-white-color: #f5f5f5;
+    --main-black-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.static {
+    position: static;
+}
+
+.cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2.owl-slide-animated.owl-slide-title  {
+    color: #f5f5f5;
+}
+
+.owl-slide-animated.owl-slide-subtitle {
+    color: #f5f5f5;
+}
+
+.owl-carousel .owl-slide {
+    position: relative;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.owl-carousel .owl-slide-animated {
+    transform: translateX(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.05s;
+}
+
+.owl-carousel .owl-slide-animated.is-transitioned {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+.owl-carousel .owl-slide-title.is-transitioned {
+    transition-delay: 0.2s;
+}
+
+.owl-carousel .owl-slide-subtitle.is-transitioned {
+    transition-delay: 0.35s;
+}
+
+.owl-carousel .owl-slide-cta.is-transitioned {
+    transition-delay: 0.5s;
+}
+
+a.owl-slide-cta {
+    background-color: #2A74AA;
+    color: #f5f5f5;
+}
+
+a.owl-slide-cta:hover {
+    background-color: #f5f5f5 ;
+    color: #2A74AA;
+}
+
+.owl-carousel .owl-dots,
+.owl-carousel .owl-nav {
+    position: absolute;
+}
+
+.owl-carousel .owl-dots .owl-dot,
+.owl-carousel .owl-nav [class*="owl-"]:focus {
+    outline: none;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+    background: transparent;
+    border: 1px solid var(--main-white-color);
+    transition: all 0.2s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover span,
+.owl-carousel .owl-dots .owl-dot.active span {
+    background: var(--main-white-color);
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 44%;
+    margin: 0;
+    width: 100%
+}
+
+.owl-carousel .owl-nav svg {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+.owl-carousel .owl-nav button:hover svg {
+    opacity: 1;
+}
+
+.owl-carousel .owl-nav [class*="owl-"]:hover {
+    background: transparent;
+}
+
+button.owl-next {
+    float: right;
+}
+
+button.owl-prev {
+    float: left;
+}
+
+.container.front {
+    z-index: 100;
+}

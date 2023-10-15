@@ -1,0 +1,144 @@
+// FONTS & COLORS
+body {
+  background-color: $smoke !important;
+  font-family: 'Alegreya Sans', sans-serif !important;
+  overflow-x: hidden;
+}
+
+.bg-blue {
+  background-color:$ciel;
+}
+
+.text-blue {
+  color: $ciel;
+}
+
+.bg-smoke {
+  background-color: $smoke;
+}
+
+.text-smoke {
+  color: $smoke;
+}
+
+.font-big {
+ font-size: 2em;
+}
+
+/// IMAGES
+img.portrait {
+  width: 15%;
+}
+
+@media screen and (min-width: 768px) {
+  .maxwidth {
+    width: 100%;
+  }
+}
+
+img.map {
+  width:100%;
+  @media screen and (min-width: 1199px) {
+    width: 80%;
+  }
+}
+
+img.icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+iframe {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+  iframe {
+    height: 234px;
+    width: 416px;
+  }
+}
+
+.height300 {
+  height: 500px;
+  object-fit: cover;
+  @media screen and (max-width: 1199px) {
+      height: 300px;
+  }
+}
+
+.border_dotted {
+  border-bottom: 1px dotted $ciel ;
+}
+
+// LISTS & LINKS
+a.text-blue.large.pt-3 {
+  font-size: 2em;
+}
+
+  a.text-smoke:hover {
+      color: darken($smoke, 20%) !important;
+    }
+
+  .arrows {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 5;
+    opacity: .4;
+    img {
+      height: 50px;
+      width: 50px;
+    } &:hover {
+    bottom: 0;
+    opacity: 1;
+    transition: .5s;
+    }
+  }
+
+.logo img {
+  max-width: 150px;
+}
+
+// Media Queries for condensed navbar
+  @media screen and (max-width: 1199px) {
+
+    #navbarSupportedContent {
+      background-color: $ciel;
+      width: 100%;
+      padding: 5%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      transition: .5s;
+      z-index: -1;
+      ul  {
+        margin-top: 8%;
+      }
+    }
+    #logo_white {
+      display: none;
+    }
+    #mainNav {
+      padding: 5px;
+    .navbar-toggler {
+      width: 50px;
+      height: 50px;
+      border: 0;
+    }
+  }
+    .dropdown-menu {
+      background-color: transparent;
+      border: 0;
+    }
+    a.dropdown-item {
+      color: $smoke;
+    }
+  }
+
+#navbarSupportedContent.showNav {
+  left: 0 !important;
+  transition: .5s;
+}

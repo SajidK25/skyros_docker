@@ -1,0 +1,249 @@
+$el-max-widths:(
+        100%,
+        50%,
+        50%,
+        25%,
+        25%
+);
+
+@mixin customresposive() {
+  $i:1;
+  @each $name, $value in $grid-breakpoints {
+
+
+    @media (min-width: $value ){
+
+      flex: 0 0 nth($el-max-widths, $i);
+      max-width: nth($el-max-widths, $i);
+
+    }
+    $i:$i+1;
+  }
+
+}
+
+.parparent{
+
+
+
+
+
+
+
+
+
+  .text{
+    max-height: 0;
+    $i:1;
+    @each $name2, $value in $grid-breakpoints {
+
+
+      @media (min-width: $value ){
+        @if $i < 5{
+          max-height: inherit;
+        }
+        @else{
+          max-height: 0;
+
+        }
+
+
+      }
+      $i:$i+1;
+    }
+
+    transition: all 1s;
+  overflow: hidden;
+    -webkit-transition-delay:.3s;
+    transition-delay: .3s;
+    padding:0 10px;
+    margin-bottom: 0px;
+    &.opentext{
+      max-height: 500px;
+      padding: 10px;
+      margin-bottom: 20px;
+
+    }
+
+
+  }
+
+
+
+  &.openall{
+    .stpp {
+      .steps{ transform: rotate(-45deg);}
+    }
+    .op{
+      .stpp {s
+        .steps{
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+
+        }
+      }
+    }
+    .textall{
+      max-height: 500px;
+
+    }
+  }
+}
+
+
+
+
+.parparent.openall .op .stpp .steps {
+  transform: rotate(-135deg);
+}
+
+.parentstep .trr.op:nth-of-type(1n) .stpp .steps{
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+
+}
+
+
+.trr{
+  &.op{
+    .num{
+      opacity: 0;
+    }
+    .num.nn {
+      opacity: 1;
+    }
+  }
+}
+.parentstep {
+  display: flex;
+  color: #fff;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+
+  .stpp {
+    width: 100%;
+    margin-bottom: 30px;
+    .steps{
+      transition: all 0.3s;
+      transform: rotate(0deg);
+    }
+    position: relative;
+  }
+  .num {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 15%;
+    bottom: 0;
+    font-size: 85px;
+    color: #fff;
+    transition: opacity 0.3s;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .num.nn {
+    display: block;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    opacity: 0;
+    img {
+      width: 100%;
+    }
+  }
+  .num2 {
+    font-size: 37px;
+    margin-top: -21px;
+  }
+  .textall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    @include customresposive();
+    flex: 1;
+    margin: 20px 0;
+    transition: all 1s;
+    max-height: 0;
+    overflow: hidden;
+    $i:1;
+    @each $name2, $value in $grid-breakpoints {
+
+
+      @media (min-width: $value ){
+        @if $i < 5{
+          max-height: inherit;
+        }
+        @else{
+          max-height: 0;
+
+        }
+
+
+      }
+      $i:$i+1;
+    }
+    img{
+      width: 100%;
+      max-width: 168px;
+    }
+  }
+  .trr {
+    width: 25%;
+    @include customresposive();
+    $i:1;
+    @each $name2, $value in $grid-breakpoints {
+
+
+      @media (min-width: $value ){
+        @if $i < 5{
+          display:none;
+        }
+        @else{
+          display:block;
+
+        }
+
+
+      }
+      $i:$i+1;
+    }
+    @for $i from 0 through 5 {
+      &:nth-of-type(#{$i}){
+        .stpp{
+          .steps{
+            -webkit-transition-delay: #{($i*2)/10}s;
+            transition-delay: #{($i*2)/10}s;
+          }
+        }
+      }
+    }
+  }
+  h3 {
+    width: 100%;
+    font-size: 31px;
+    margin: 10px;
+    text-align: center;
+    flex:1;
+    margin-bottom: 35px;
+  }
+  .num1 {
+    line-height: 1;
+    font-size: 72px;
+  }
+}
+
+.calculator#changenow{
+  &:before{
+    background: rgba(0, 0, 0, 0.5);
+  }
+  h1.text-center.bigheader {
+    margin: 20px 0;
+    color: #fff;
+  }
+}
