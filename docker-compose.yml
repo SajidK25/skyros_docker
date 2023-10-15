@@ -19,7 +19,6 @@ services:
             - php
         networks:
             - skyros_net
-            - default
     php:
         image: nanoninja/php-fpm:${PHP_VERSION}
         container_name: skyros_php
@@ -36,7 +35,7 @@ services:
             - "./web/libs/composer/:/app"
         command: composer install
         networks:
-            - default
+            - skyros_net
 
 networks:
     skyros_net:
