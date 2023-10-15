@@ -28,7 +28,6 @@ services:
             - "./web:/var/www/html"
         networks:
             - skyros_net
-            - default
     composer:
         image: "composer"
         volumes:
@@ -41,3 +40,4 @@ networks:
     skyros_net:
         external: true
         driver: bridge
+    mysql_net:
