@@ -19,7 +19,6 @@ services:
             - php
         networks:
             - skyros_net
-            - default
     php:
         image: nanoninja/php-fpm:${PHP_VERSION}
         container_name: skyros_php
@@ -29,7 +28,6 @@ services:
             - "./web:/var/www/html"
         networks:
             - skyros_net
-            - default
     composer:
         image: "composer"
         volumes:
