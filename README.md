@@ -10,7 +10,8 @@
 
 ## Step-1: Create an user and give necessary permission 
 ```
-adduser devops
+ssh root@95.217.236.223
+adduser devops # password rafi420
 ```
 ```
 usermod -aG sudo devops
@@ -19,6 +20,7 @@ usermod -aG sudo devops
 
 Create a file name `docker_setup.sh`
 ```
+ssh devops@95.217.236.223
 nano docker_setup.sh
 ```
 Copy following commands and paste inside `docker_setup.sh`
